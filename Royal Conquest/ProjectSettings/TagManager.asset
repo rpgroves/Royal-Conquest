@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Entity
+  - Node
+  - Building
+  - Unit
   layers:
   - Default
   - TransparentFX
@@ -43,4 +47,10 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 4086463117
+    locked: 0
+  - name: Entity
+    uniqueID: 3354623655
+    locked: 0
+  - name: UI
+    uniqueID: 1782281713
     locked: 0

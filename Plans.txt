@@ -9,3 +9,24 @@ Plans:
 - minions automaticaly spawn at no cost to players
 - larger units can be spawned by the player
 - bases have modularity, things like towers can be added (NO CHOICE ON WHAT TO BUILD FOR NOW)
+
+Entities:
+- Things they need to know
+	-how much damage does it do?
+	-how much health does it have?
+	-what color am I? (red if taking damage?)
+
+Units:
+- things they need to store
+	-where are they current going?
+	-are they currently targeting something?
+	-What animation am i playing
+	-what weapon am i holding (is it melee or ranged?)
+	-what is near me? (scan for entities, buildings, nodes)
+
+-navigation order
+	-are we already following an enemy or building?
+	-is there an enemy/building nearby?
+	-is there a node we are already following?
+	-have we gotten too close to the nearby node?
+	-is there a node nearby?
