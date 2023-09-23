@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Entity : MonoBehaviour
 {
@@ -10,14 +11,21 @@ public class Entity : MonoBehaviour
     [SerializeField] float healingCooldown = 5.0f;
     [SerializeField] float moveSpeed = 1.0f;
     [SerializeField] string team = "";
+    [SerializeField] float damageDealt = 15.0f;
+    [SerializeField] Animator myAnimator;
+    [SerializeField] SpriteRenderer mySprite;
+    public UnityEvent OnDeath;
     float timeSinceLastHeal = 0;
     Vector3 myDirection;
-    CircleCollider2D myRangeCollider;
+    public CircleCollider2D myRangeCollider;
     [SerializeField] bool isEntityInControl = true;
+    public GameObject healthBarPrefab;
 
     void Start()
     {
         myRangeCollider = gameObject.GetComponent<CircleCollider2D>();
+        HealthBar healthBar = Instantiate(healthBarPrefab, GameObject.Find("Canvas").transform).GetComponent<HealthBar>();
+        healthBar.CreateBar(this);
     }
 
     void Update()
@@ -32,20 +40,24 @@ public class Entity : MonoBehaviour
         {
             Vector3 delta = myDirection.normalized * moveSpeed * Time.deltaTime;
             transform.position += delta;
-        
-            /*if(myDirection.x == 0 && myDirection.y == 0)
+
+            Vector3 v = new Vector3(1, 1, 1);
+            myDirection.Normalize();
+            if(myDirection.x > 0)
+                v.x = -1;
+
+            mySprite.gameObject.transform.localScale = v;
+
+            if(myAnimator == null)
+                return;
+
+            if(myDirection.x == 0 && myDirection.y == 0)
             {
                 myAnimator.SetBool("isRunning", false);
-                myAnimator.SetBool("isIdle", true);
                 return;
             }
             
             myAnimator.SetBool("isRunning", true);
-            myAnimator.SetBool("isIdle", false);
-
-            myDirection.Normalize();
-            myAnimator.SetFloat("X Comp", myDirection.x);
-            myAnimator.SetFloat("Y Comp", myDirection.y);*/
         }
     }
 
@@ -63,7 +75,7 @@ public class Entity : MonoBehaviour
         myDirection = v;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         timeSinceLastHeal = 0;
         entityHealth -= damage;
@@ -80,7 +92,9 @@ public class Entity : MonoBehaviour
 
     public void HandleEntityDeath()
     {
-        Debug.Log("Death!");
+        //Debug.Log("Death!");
+        Destroy(this.gameObject);
+        OnDeath?.Invoke();
     }
 
     public string getTeam()
@@ -96,5 +110,10 @@ public class Entity : MonoBehaviour
     public float getMaxHealth()
     {
         return entityMaxHealth;
+    }
+
+    public float getDamageDealt()
+    {
+        return damageDealt;
     }
 }

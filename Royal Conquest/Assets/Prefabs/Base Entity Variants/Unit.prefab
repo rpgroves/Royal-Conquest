@@ -193,9 +193,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2137642788200067162}
   m_SourcePrefab: {fileID: 100100000, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
---- !u!212 &237648049926941291 stripped
+--- !u!212 &542404731850091702 stripped
 SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6132837517124372631, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5897321480751730250, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
   m_PrefabInstance: {fileID: 6219608107272020732}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2144451433956129630 stripped
@@ -217,15 +217,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entityHealth: 100
   entityMaxHealth: 100
-  healingPerSecond: 5
+  healingPerSecond: 2
   healingCooldown: 5
-  moveSpeed: 5
+  moveSpeed: 1
   team: 
+  damageDealt: 15
+  myAnimator: {fileID: 3755226197041850135}
+  mySprite: {fileID: 542404731850091702}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  myRangeCollider: {fileID: 0}
   isEntityInControl: 1
+  healthBarPrefab: {fileID: 2854781621890943586, guid: 371de508d2dcee34aab3c9167ef0e6ef, type: 3}
   isMovingNorth: 1
   updateDistance: 1
   attackDistance: 1.5
-  healthBarPrefab: {fileID: 2854781621890943586, guid: 371de508d2dcee34aab3c9167ef0e6ef, type: 3}
+  attackDistanceBuildings: 3.5
+  weaponParent: {fileID: 0}
+--- !u!95 &3755226197041850135 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7083391225918457323, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
+  m_PrefabInstance: {fileID: 6219608107272020732}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5603747590425451455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1987492752162830659, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
@@ -248,7 +262,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbe4bf2024e350643938277130e81bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterRenderer: {fileID: 237648049926941291}
+  characterRenderer: {fileID: 0}
   weaponRenderer: {fileID: 2606148238991030056}
   targetDirection: {x: 0, y: 0}
   baseDirection: {x: 1, y: 0}
+  animator: {fileID: 0}
+  delay: 0.4
+  circleOrigin: {fileID: 0}
+  radius: 0.5
+  isAttacking: 0
+  me: {fileID: 0}

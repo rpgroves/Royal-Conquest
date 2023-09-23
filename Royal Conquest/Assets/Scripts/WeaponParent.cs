@@ -12,9 +12,18 @@ public class WeaponParent : MonoBehaviour
     [SerializeField] Transform circleOrigin;
     [SerializeField] float radius = 0.5f;
     bool attackBlocked = false;
+    [SerializeField] bool isAttacking = false;
+    [SerializeField] GameObject me;
+
+    public void ResetIsAttacking()
+    {
+        isAttacking = false;
+    }
 
     void Update()
     {
+        if(!isAttacking)
+            return;
         Vector2 direction;
         if(targetDirection == null)
         {
@@ -26,6 +35,17 @@ public class WeaponParent : MonoBehaviour
             direction = targetDirection;
             this.transform.right = direction; 
         }
+
+        Vector2 scale = transform.localScale;
+        if(direction.x < 0)
+        {
+            scale.y = -1;
+        }
+        if(direction.x > 0)
+        {
+            scale.y = 1;
+        }
+        transform.localScale = scale;
     }
 
     public Vector2 getTargetDirection()
@@ -38,8 +58,19 @@ public class WeaponParent : MonoBehaviour
         targetDirection = td;
     }
 
+    public bool getIsAttacking()
+    {
+        return isAttacking;
+    }
+
+    public void setIsAttacking(bool ia)
+    {
+        isAttacking = ia;
+    }
+
     public void Attack()
     {
+        isAttacking = true;
         if(attackBlocked)
             return;
         animator.SetTrigger("Attack");
@@ -58,5 +89,25 @@ public class WeaponParent : MonoBehaviour
         Gizmos.color = Color.yellow;
         Vector3 position = circleOrigin == null ? Vector3.zero : circleOrigin.position;
         Gizmos.DrawWireSphere(position, radius);
+    }
+
+    public void DetectColliders()
+    {
+        //Debug.Log("Detecting colliders");
+        foreach(Collider2D collider in Physics2D.OverlapCircleAll(circleOrigin.position, radius))
+        {
+            //Debug.Log("Hit a dude " + collider.gameObject.name);
+            if(collider.gameObject == me)
+                continue;
+            if(collider.isTrigger == false)
+            {
+                //Debug.Log("Hit a dude " + collider.gameObject.name);
+                if(collider.gameObject.tag == "Unit" || collider.gameObject.tag == "Building" || collider.gameObject.tag == "Player")
+                {
+                    if(collider.gameObject.GetComponent<Entity>().getTeam() != me.GetComponent<Entity>().getTeam())
+                        collider.gameObject.GetComponent<Entity>().TakeDamage(me.GetComponent<Entity>().getDamageDealt());
+                }
+            }
+        }
     }
 }

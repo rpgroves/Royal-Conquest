@@ -7,7 +7,7 @@ public class Unit : Entity
     [SerializeField] bool isMovingNorth = true;
     [SerializeField] float updateDistance = 5.0f;
     [SerializeField] float attackDistance = 5.0f;
-    [SerializeField] GameObject healthBarPrefab;
+    [SerializeField] float attackDistanceBuildings = 5.0f;
     [SerializeField] WeaponParent weaponParent;
     GameObject currentTarget = null;
     List<GameObject> nearbyTargets;
@@ -30,8 +30,8 @@ public class Unit : Entity
     {
         if(other.gameObject.tag == "Unit" || other.tag == "Building" || other.tag == "Player")
         {
-            //Debug.Log("an entity trigger");
-            if(other.gameObject.GetComponent<Unit>().getTeam() != this.getTeam())
+            //Debug.Log("an entity trigger " + other.gameObject.name);
+            if(other.gameObject.GetComponent<Entity>().getTeam() != this.getTeam())
             {
                 nearbyTargets.Add(other.gameObject);
             }
@@ -48,11 +48,19 @@ public class Unit : Entity
     {
         GameObject newTarget = null;
 
+        foreach(GameObject gb in nearbyTargets)
+        {
+            if(gb == null)
+            {
+                nearbyTargets.Remove(gb);
+            }
+        }
+
         //are we already targeting an enemy / building and we are in range
         if(currentTarget != null && currentTarget.tag != "Node")
         {
             //are we close enough to that enemy to attack?
-            if(TwoObjectDistance(currentTarget, gameObject) < attackDistance)
+            if(((TwoObjectDistance(currentTarget, gameObject) < attackDistance) && (currentTarget.tag == "Unit" || currentTarget.tag == "Player")) || ((TwoObjectDistance(currentTarget, gameObject) < attackDistanceBuildings) && currentTarget.tag == "Building"))
             {
                 //Debug.Log("ATTACK");
                 ChangeMoveVector(new Vector2(0.0f, 0.0f));
