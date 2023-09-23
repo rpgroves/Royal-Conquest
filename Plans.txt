@@ -1,0 +1,11 @@
+Plans:
+
+- Clash Royale Inspired
+- Fog of war implemented
+- Units spawned in the regions near owned buildings
+- buildings can be taken over to be controlled by one side
+- units follow a set of nodes in each lane, when unit has no target it finds nearest: Node, Enemy, or Building
+- NODES PASS NEXT NODE TO UNITS -> this means they dont need to scan for nearest node as often
+- minions automaticaly spawn at no cost to players
+- larger units can be spawned by the player
+- bases have modularity, things like towers can be added (NO CHOICE ON WHAT TO BUILD FOR NOW)
