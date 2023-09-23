@@ -10,6 +10,12 @@ Plans:
 - larger units can be spawned by the player
 - bases have modularity, things like towers can be added (NO CHOICE ON WHAT TO BUILD FOR NOW)
 
+Game Manager:
+- knows what it can spawn
+- Manages wave spawners
+- Manages whether a player has won
+- checks whether neutral zones are neutral
+
 Entities:
 - Things they need to know
 	-how much damage does it do?
