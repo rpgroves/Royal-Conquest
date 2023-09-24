@@ -18,6 +18,16 @@ public class Player : Entity
     {
         HandleMovement();
         HandleHealing();
+        HandleMouse();
+    }
+
+    void HandleMouse()
+    {
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = Camera.main.nearClipPlane;
+        weaponParent.setTargetDirection(-(Camera.main.ScreenToWorldPoint(mousePos) - gameObject.transform.position).normalized);
+        //weaponParent.setTargetDirection(-(currentTarget.transform.position - gameObject.transform.position).normalized);
+        //Debug.Log(mousePos);
     }
 
     void OnMove(InputValue value)

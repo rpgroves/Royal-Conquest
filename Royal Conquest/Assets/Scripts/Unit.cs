@@ -5,6 +5,7 @@ using UnityEngine;
 public class Unit : Entity
 {
     [SerializeField] bool isMovingNorth = true;
+    [SerializeField] bool isNodeFollower = true;
     [SerializeField] float updateDistance = 5.0f;
     [SerializeField] float attackDistance = 5.0f;
     [SerializeField] float attackDistanceBuildings = 5.0f;
@@ -21,6 +22,8 @@ public class Unit : Entity
 
     void Update()
     {
+        if(!isEntityInControl)
+            return;
         HandleTarget();
         HandleMovement();
         HandleHealing();
@@ -41,7 +44,11 @@ public class Unit : Entity
     void OnTriggerExit2D(Collider2D other)
     {
         if(nearbyTargets.Contains(other.gameObject))
+        {
             nearbyTargets.Remove(other.gameObject);
+            if(other.gameObject == currentTarget)
+                currentTarget = null;
+        }
     }
 
     void HandleTarget()
@@ -92,7 +99,7 @@ public class Unit : Entity
         }
 
         //are we already going to a node?
-        else if(currentTarget != null && currentTarget.tag == "Node")
+        else if(isNodeFollower && currentTarget != null && currentTarget.tag == "Node")
         {
             //are we too close to that node?
             if(TwoObjectDistance(currentTarget, gameObject) < updateDistance)
@@ -107,7 +114,7 @@ public class Unit : Entity
         }
 
         //nothing nearby and no current target, we need to find a node nearby
-        else if(nearbyTargets.Count == 0)
+        else if(isNodeFollower && nearbyTargets.Count == 0)
         {
             //Debug.Log("Finding nearest node");
             Node[] nodes = FindObjectsOfType<Node>();

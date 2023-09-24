@@ -18,7 +18,7 @@ public class Entity : MonoBehaviour
     float timeSinceLastHeal = 0;
     Vector3 myDirection;
     public CircleCollider2D myRangeCollider;
-    [SerializeField] bool isEntityInControl = true;
+    public bool isEntityInControl = true;
     public GameObject healthBarPrefab;
 
     void Start()
@@ -30,13 +30,15 @@ public class Entity : MonoBehaviour
 
     void Update()
     {
+        if(!isEntityInControl)
+            return;
         HandleMovement();
         HandleHealing();
     }
 
     public void HandleMovement()
     {
-        if(isEntityInControl && myDirection != null)
+        if(myDirection != null)
         {
             Vector3 delta = myDirection.normalized * moveSpeed * Time.deltaTime;
             transform.position += delta;
@@ -115,5 +117,10 @@ public class Entity : MonoBehaviour
     public float getDamageDealt()
     {
         return damageDealt;
+    }
+
+    public void setEntityInControl(bool ieic)
+    {
+        isEntityInControl = ieic;
     }
 }

@@ -22,7 +22,7 @@ public class WeaponParent : MonoBehaviour
 
     void Update()
     {
-        if(!isAttacking)
+        if(isAttacking)
             return;
         Vector2 direction;
         if(targetDirection == null)
@@ -104,6 +104,7 @@ public class WeaponParent : MonoBehaviour
                 //Debug.Log("Hit a dude " + collider.gameObject.name);
                 if(collider.gameObject.tag == "Unit" || collider.gameObject.tag == "Building" || collider.gameObject.tag == "Player")
                 {
+                    
                     if(collider.gameObject.GetComponent<Entity>().getTeam() != me.GetComponent<Entity>().getTeam())
                         collider.gameObject.GetComponent<Entity>().TakeDamage(me.GetComponent<Entity>().getDamageDealt());
                 }

@@ -35,4 +35,16 @@ public class GameManager : MonoBehaviour
             Instantiate(minionPrefabRed, location.transform);
         }
     }
+
+    public void WinConditionMet(string winner)
+    {
+        foreach(Entity e in FindObjectsOfType<Entity>())
+        {
+            e.setEntityInControl(false);
+        }
+        if(winner == "Red")
+            Debug.Log("Red team won!");
+        if(winner == "Blue")
+            Debug.Log("Blue team won!");
+    }
 }

@@ -60,10 +60,18 @@ PrefabInstance:
       propertyPath: healthBarPrefab
       value: 
       objectReference: {fileID: 7351108824063518325, guid: 28dc54ac3ae7ff54cadcd599638ab508, type: 3}
+    - target: {fileID: 5986588587482918140, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3f9da7a452f7dd641b1e6e752659f31a, type: 2}
     - target: {fileID: 6957673246465615709, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2007575840, guid: 1363e073b41838141901188f2fa3b551, type: 3}
+      objectReference: {fileID: 985762548, guid: 0581ec5632fc3874685ac3ee154191d1, type: 3}
+    - target: {fileID: 6957673246465615709, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8848170261949722805, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
       propertyPath: m_Name
       value: Knight Blue
