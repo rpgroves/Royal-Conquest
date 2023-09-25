@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 77620291143646084, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.43
       objectReference: {fileID: 0}
     - target: {fileID: 77620291143646084, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -20.49
       objectReference: {fileID: 0}
     - target: {fileID: 77620291143646084, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: m_LocalPosition.z
@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: 2701673332267162118, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 01ee2f3289cc76e4db92e176b34a16ca, type: 2}
+      objectReference: {fileID: 9100000, guid: 7574f01ad9b51ab42855d595372b42ed, type: 2}
     - target: {fileID: 2916972066598387551, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: OnAttackPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -71,7 +71,7 @@ PrefabInstance:
     - target: {fileID: 5897321480751730250, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 433314494, guid: 2e51e6db68ab9b849b073610f39b318c, type: 3}
+      objectReference: {fileID: -1723087905, guid: 2e51e6db68ab9b849b073610f39b318c, type: 3}
     - target: {fileID: 5897321480751730250, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -79,11 +79,19 @@ PrefabInstance:
     - target: {fileID: 7083391225918457323, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 2ae095765d81bcb41a540de5dff7c668, type: 2}
+      objectReference: {fileID: 9100000, guid: 2de8ed3fc34eebe4ba7f8ad8880da24c, type: 2}
+    - target: {fileID: 7752123316194026151, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.427
+      objectReference: {fileID: 0}
+    - target: {fileID: 7752123316194026151, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.127
+      objectReference: {fileID: 0}
     - target: {fileID: 8086105163622838268, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9eea5becd34e1c54bb0a0ae82f1bfaf3, type: 2}
+      objectReference: {fileID: -1012455223, guid: a5f49dbfbea8ad642be1e595e5083e19, type: 3}
     - target: {fileID: 8086105163622838268, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -156,7 +164,7 @@ MonoBehaviour:
   healingCooldown: 5
   moveSpeed: 2
   team: Red
-  damageDealt: 15
+  damageDealt: 40
   myAnimator: {fileID: 3256208672144557596}
   mySprite: {fileID: 2209680715765304765}
   OnDeath:

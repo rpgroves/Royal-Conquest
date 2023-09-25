@@ -22,6 +22,29 @@ Entities:
 	-how much health does it have?
 	-what color am I? (red if taking damage?)
 
+Projectiles:
+- Types
+	-tracking (goes only into the enemy targeted)
+	-piercing (goes towards first then continues until x distance)
+	-splash damage (goes into enemy targetted then damages enemies around it)
+-what do they need to know/do? (base to inherit from)
+	-target object (maybe tag?)
+	-damage to deal
+	-have i hit the target?
+	-aim itself towards target
+	-move itself torwards target
+	-destroy self on hit
+-what does a piercing one need to know/do?
+	-nothing special outside the base
+-what does a piercing one need to know/do?
+	-max range after hitting the target
+	-needs to continue straight after hitting target, do damage to all enemy entities
+	-destroy self only at max range
+-what does a splash damage projectile need to know / do?
+	-radius of splash damage
+	-hit scan splash area, similar to how melee checks its surronudings
+	-destroy self after damage dealt
+
 Units:
 - things they need to store
 	-where are they current going?

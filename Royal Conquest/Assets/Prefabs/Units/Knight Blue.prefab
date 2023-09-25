@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2832705706889336189
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1452311668636824337, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f1dc49399fd233741906e3769ebe066e, type: 2}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677008298486971196, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: team
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677008298486971196, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: isMovingNorth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677008298486971196, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: healthBarPrefab
+      value: 
+      objectReference: {fileID: 7351108824063518325, guid: 28dc54ac3ae7ff54cadcd599638ab508, type: 3}
+    - target: {fileID: 4714843975760889579, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 56a4f45ebe76cf342ab35afc69030522, type: 2}
+    - target: {fileID: 5986588587482918140, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3f9da7a452f7dd641b1e6e752659f31a, type: 2}
+    - target: {fileID: 6957673246465615709, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 985762548, guid: 0581ec5632fc3874685ac3ee154191d1, type: 3}
+    - target: {fileID: 6957673246465615709, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8848170261949722805, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_Name
+      value: Knight Blue
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
