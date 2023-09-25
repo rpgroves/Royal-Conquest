@@ -7,12 +7,13 @@ public class WeaponParent : MonoBehaviour
     [SerializeField] SpriteRenderer characterRenderer, weaponRenderer;
     [SerializeField] Vector2 targetDirection;
     [SerializeField] Vector2 baseDirection;
-    [SerializeField] Animator animator;
+    public Animator animator;
     [SerializeField] float delay = .4f;
     [SerializeField] Transform circleOrigin;
     [SerializeField] float radius = 0.5f;
-    bool attackBlocked = false;
-    [SerializeField] bool isAttacking = false;
+    public bool attackBlocked = false;
+    public bool isAttacking = false;
+    public GameObject targetObject;
     [SerializeField] GameObject me;
 
     public void ResetIsAttacking()
@@ -21,6 +22,11 @@ public class WeaponParent : MonoBehaviour
     }
 
     void Update()
+    {
+        HandleAim();
+    }
+
+    public void HandleAim()
     {
         if(isAttacking)
             return;
@@ -68,20 +74,22 @@ public class WeaponParent : MonoBehaviour
         isAttacking = ia;
     }
 
-    public void Attack()
+    public virtual void Attack()
     {
         isAttacking = true;
         if(attackBlocked)
             return;
         animator.SetTrigger("Attack");
-        attackBlocked = true;
         StartCoroutine(DelayAttack());
     }
 
-    IEnumerator DelayAttack()
+    public IEnumerator DelayAttack()
     {
+        //Debug.Log("Delaying");
+        attackBlocked = true;
         yield return new WaitForSeconds(delay);
         attackBlocked = false;
+        //Debug.Log("Delay over");
     }
 
     void OnDrawGizmosSelected()
@@ -110,5 +118,10 @@ public class WeaponParent : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void setTargetObject(GameObject to)
+    {
+        targetObject = to;
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Projectile : MonoBehaviour
 {
@@ -10,17 +11,9 @@ public class Projectile : MonoBehaviour
     [SerializeField] SpriteRenderer mySprite;
     Vector2 targetDirection;
 
-
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if(targetObject == null)
-            Destroy(this.gameObject);
         setTargetDirection((targetObject.transform.position - gameObject.transform.position).normalized);
         HandleMovement();
     }
@@ -42,6 +35,18 @@ public class Projectile : MonoBehaviour
     void setTargetDirection(Vector2 td)
     {
         targetDirection = td;
+    }
+
+    public void setTargetObject(GameObject to)
+    {
+        targetObject = to;
+        if(targetObject.TryGetComponent<Entity>(out Entity enemy))
+            enemy.OnDeath.AddListener(EntityDied);
+    }
+
+    void EntityDied()
+    {
+        Destroy(this.gameObject);
     }
 
     void HandleMovement()

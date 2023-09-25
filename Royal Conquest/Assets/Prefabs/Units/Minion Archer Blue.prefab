@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7607478432538397218
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2322814947900331275, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322814947900331275, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322814947900331275, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322814947900331275, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322814947900331275, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322814947900331275, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322814947900331275, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322814947900331275, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322814947900331275, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322814947900331275, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855665549760703332, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 142c319de607ef6429fff333310b8744, type: 2}
+    - target: {fileID: 5809215576519457956, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: team
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809215576519457956, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: isMovingNorth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691421886516115245, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_Name
+      value: Minion Archer Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8140527326058733765, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -552073552, guid: 0581ec5632fc3874685ac3ee154191d1, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}

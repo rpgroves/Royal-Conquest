@@ -55,11 +55,11 @@ public class Unit : Entity
     {
         GameObject newTarget = null;
 
-        foreach(GameObject gb in nearbyTargets)
+        for(int i = 0; i < nearbyTargets.Count; i++)
         {
-            if(gb == null)
+            if(nearbyTargets[i] == null)
             {
-                nearbyTargets.Remove(gb);
+                nearbyTargets.RemoveAt(i);
             }
         }
 
@@ -141,14 +141,19 @@ public class Unit : Entity
         }
         if(currentTarget != null)
         {
+            weaponParent.setTargetObject(currentTarget);
             ChangeMoveVector((currentTarget.transform.position - gameObject.transform.position).normalized);
             if(weaponParent != null)
                 weaponParent.setTargetDirection(-(currentTarget.transform.position - gameObject.transform.position).normalized);
         }
+        else
+            weaponParent.setTargetObject(null);
     }
 
     float TwoObjectDistance(GameObject ob1, GameObject ob2)
     {
+        if(ob1 == null || ob2 == null)
+            return 0.0f;
         return Vector3.Distance(ob1.transform.position, ob2.transform.position);
     }
 }

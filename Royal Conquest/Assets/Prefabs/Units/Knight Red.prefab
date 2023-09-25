@@ -9,9 +9,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 935274702002353443, guid: 9db48a3d997d65343bf3fa59ecc272c2, type: 3}
+      propertyPath: damageDealt
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 935274702002353443, guid: 9db48a3d997d65343bf3fa59ecc272c2, type: 3}
+      propertyPath: entityHealth
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 935274702002353443, guid: 9db48a3d997d65343bf3fa59ecc272c2, type: 3}
       propertyPath: weaponParent
       value: 
       objectReference: {fileID: 8837172996581833649}
+    - target: {fileID: 935274702002353443, guid: 9db48a3d997d65343bf3fa59ecc272c2, type: 3}
+      propertyPath: entityMaxHealth
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 935274702002353443, guid: 9db48a3d997d65343bf3fa59ecc272c2, type: 3}
       propertyPath: healthBarPrefab
       value: 

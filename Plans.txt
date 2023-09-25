@@ -10,6 +10,20 @@ Plans:
 - larger units can be spawned by the player
 - bases have modularity, things like towers can be added (NO CHOICE ON WHAT TO BUILD FOR NOW)
 
+Home Screen Ideas:
+- start out in a tavern or castle
+- there is a character you can talk to that will point you towards the gameplay
+- there is a tutorial zone, gameplay zone, exit game zone, and credits zone
+- walking into a zone will trigger the next scene
+
+Game mode ideas:
+- invasion: move through a map where the enemy owns all territory and you must
+work through a single lane capturing checkpoints
+- conquest: classic clash royale clone where there are lanes you must push to destroy the enemy base
+- resource battle: no enemy castle, but you have to deplete enemy tickets before yours
+- gold rush: make more money than the enemy (neutrals, neutral bases (that can respawn), neutral camps
+enemies, enemy bases, all are worth money)
+
 Game Manager:
 - knows what it can spawn
 - Manages wave spawners
