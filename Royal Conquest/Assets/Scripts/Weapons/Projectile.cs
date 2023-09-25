@@ -5,11 +5,18 @@ using UnityEngine.Events;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] GameObject targetObject;
-    [SerializeField] float damageToDeal = 20;
+    GameObject targetObject;
+    float damageToDeal = 20;
+    float knockback = 0.0f;
     [SerializeField] float moveSpeed = 5;
     [SerializeField] SpriteRenderer mySprite;
     Vector2 targetDirection;
+
+    public void ProjectileSetup(float dmg, float kb)
+    {
+        damageToDeal = dmg;
+        knockback = kb;
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,7 +33,7 @@ public class Projectile : MonoBehaviour
         {
             if(enemy.gameObject == targetObject)
             {
-                enemy.TakeDamage(damageToDeal);
+                enemy.TakeDamage(damageToDeal, knockback, gameObject.transform.position);
                 Destroy(this.gameObject);
             }
         }

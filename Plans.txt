@@ -18,7 +18,7 @@ Home Screen Ideas:
 
 Game mode ideas:
 - invasion: move through a map where the enemy owns all territory and you must
-work through a single lane capturing checkpoints
+work through a single lane capturing checkpoints, enemy cannot recpature land but there is a time limit
 - conquest: classic clash royale clone where there are lanes you must push to destroy the enemy base
 - resource battle: no enemy castle, but you have to deplete enemy tickets before yours
 - gold rush: make more money than the enemy (neutrals, neutral bases (that can respawn), neutral camps

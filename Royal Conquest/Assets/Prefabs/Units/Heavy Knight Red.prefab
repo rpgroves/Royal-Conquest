@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3092042473994710753
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1452311668636824337, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6f7ac24df64cc314e87a7e17758c4a17, type: 2}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677008298486971196, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: moveSpeed
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677008298486971196, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: damageDealt
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677008298486971196, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: entityHealth
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677008298486971196, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: attackDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677008298486971196, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: entityKnockback
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677008298486971196, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: entityMaxHealth
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714843975760889579, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1517315171, guid: a5f49dbfbea8ad642be1e595e5083e19, type: 3}
+    - target: {fileID: 5403241466221184407, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.154
+      objectReference: {fileID: 0}
+    - target: {fileID: 5403241466221184407, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.167
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986588587482918140, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 15efa230819e6b04eade48601addef6e, type: 2}
+    - target: {fileID: 6957673246465615709, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -38753500, guid: 2e51e6db68ab9b849b073610f39b318c, type: 3}
+    - target: {fileID: 7977992786714986663, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_Mass
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837172996581833649, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: delay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837172996581833649, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: radius
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837172996581833649, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: isSplashDamager
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8848170261949722805, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_Name
+      value: Heavy Knight Red
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}

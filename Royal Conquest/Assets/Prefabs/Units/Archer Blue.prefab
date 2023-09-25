@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &201435112904930066
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 101479636919519051, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_Name
+      value: Archer Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1958250259585192099, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 846852025, guid: 0581ec5632fc3874685ac3ee154191d1, type: 3}
+    - target: {fileID: 2933855816092326658, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bfea77c8b4ddddb4780ce68023c8d8c7, type: 2}
+    - target: {fileID: 4237316970236113173, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -92596446, guid: a5f49dbfbea8ad642be1e595e5083e19, type: 3}
+    - target: {fileID: 4272674202012126402, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: team
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272674202012126402, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: isMovingNorth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272674202012126402, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: healthBarPrefab
+      value: 
+      objectReference: {fileID: 7351108824063518325, guid: 28dc54ac3ae7ff54cadcd599638ab508, type: 3}
+    - target: {fileID: 5470087554720212333, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470087554720212333, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470087554720212333, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470087554720212333, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470087554720212333, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470087554720212333, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470087554720212333, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470087554720212333, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470087554720212333, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470087554720212333, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035583972865377519, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 06f10d375742f9d4ca6ece1959f52142, type: 2}
+    - target: {fileID: 9079490882437442689, guid: edca10045dc69b743905fa0b693b6708, type: 3}
+      propertyPath: ProjectilePrefab
+      value: 
+      objectReference: {fileID: 5824605415475022550, guid: ac72bc88d626e3a40a86e278898f01bc, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: edca10045dc69b743905fa0b693b6708, type: 3}

@@ -26,19 +26,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3084154789475029076, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3084154789475029076, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4.320544
       objectReference: {fileID: 0}
     - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -9.582084
       objectReference: {fileID: 0}
     - target: {fileID: 3479632618059993747, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
       propertyPath: m_LocalPosition.z
@@ -92,6 +92,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: ba2da8a597e055144bc7d06348f695d8, type: 2}
+    - target: {fileID: 6542871836750384048, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.568
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542871836750384048, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.047
+      objectReference: {fileID: 0}
     - target: {fileID: 6957673246465615709, guid: dc3d7fed36ec1f4408585e060b7b8184, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -163,4 +171,5 @@ MonoBehaviour:
   isAttacking: 0
   targetObject: {fileID: 0}
   me: {fileID: 101479636919519051}
+  isSplashDamager: 0
   ProjectilePrefab: {fileID: 4851825365012076755, guid: 933114cf98543074882e25801b45eb74, type: 3}

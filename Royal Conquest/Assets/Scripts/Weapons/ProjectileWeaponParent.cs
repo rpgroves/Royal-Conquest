@@ -19,6 +19,7 @@ public class ProjectileWeaponParent : WeaponParent
         animator.SetTrigger("Attack");
         GameObject projectile = Instantiate(ProjectilePrefab, gameObject.transform);
         projectile.GetComponent<Projectile>().setTargetObject(targetObject);
+        projectile.GetComponent<Projectile>().ProjectileSetup(GetComponentInParent<Entity>().getDamageDealt(), GetComponentInParent<Entity>().getKnockback());
         StartCoroutine(DelayAttack());
     }
 }

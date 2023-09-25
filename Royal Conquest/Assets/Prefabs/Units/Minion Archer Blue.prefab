@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 311255566247113865, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 06f10d375742f9d4ca6ece1959f52142, type: 2}
     - target: {fileID: 2322814947900331275, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -52,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 142c319de607ef6429fff333310b8744, type: 2}
+    - target: {fileID: 5377694441462234684, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: ProjectilePrefab
+      value: 
+      objectReference: {fileID: 2974932468616448498, guid: b1781def4d53856479f645e7261bdc60, type: 3}
     - target: {fileID: 5809215576519457956, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
       propertyPath: team
       value: Blue
@@ -60,6 +68,14 @@ PrefabInstance:
       propertyPath: isMovingNorth
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5809215576519457956, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: healthBarPrefab
+      value: 
+      objectReference: {fileID: 7351108824063518325, guid: 28dc54ac3ae7ff54cadcd599638ab508, type: 3}
+    - target: {fileID: 5843443678573183347, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -92596446, guid: a5f49dbfbea8ad642be1e595e5083e19, type: 3}
     - target: {fileID: 7691421886516115245, guid: 38122d6ef31e55546ad7748b600d713e, type: 3}
       propertyPath: m_Name
       value: Minion Archer Blue

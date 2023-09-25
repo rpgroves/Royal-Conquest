@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4851825365012076755, guid: 933114cf98543074882e25801b45eb74, type: 3}
       propertyPath: m_Name
-      value: Mini Arrow Projectile
+      value: Red Mini Arrow
       objectReference: {fileID: 0}
     - target: {fileID: 5293171644658472776, guid: 933114cf98543074882e25801b45eb74, type: 3}
       propertyPath: m_LocalScale.x

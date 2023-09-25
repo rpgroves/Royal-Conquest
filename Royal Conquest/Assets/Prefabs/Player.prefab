@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 77620291143646084, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.43
+      value: -4.56
       objectReference: {fileID: 0}
     - target: {fileID: 77620291143646084, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -20.49
+      value: -21.51
       objectReference: {fileID: 0}
     - target: {fileID: 77620291143646084, guid: 2cf9796252351e6408106c81b81e0993, type: 3}
       propertyPath: m_LocalPosition.z
@@ -158,15 +158,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 634bb873708bf0943979c1d7abb45bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityHealth: 100
-  entityMaxHealth: 100
+  entityHealth: 1000
+  entityMaxHealth: 1000
   healingPerSecond: 5
   healingCooldown: 5
   moveSpeed: 2
   team: Red
   damageDealt: 40
+  entityKnockback: 3000
   myAnimator: {fileID: 3256208672144557596}
   mySprite: {fileID: 2209680715765304765}
+  turnRedDelay: 0.3
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -228,6 +230,9 @@ MonoBehaviour:
   animator: {fileID: 7639063568291863025}
   delay: 0.4
   circleOrigin: {fileID: 3808050149925384055}
-  radius: 0.5
+  radius: 1
+  attackBlocked: 0
   isAttacking: 0
+  targetObject: {fileID: 0}
   me: {fileID: 355716106945206869}
+  isSplashDamager: 1

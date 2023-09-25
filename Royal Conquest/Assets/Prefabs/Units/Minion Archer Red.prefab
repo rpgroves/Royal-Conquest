@@ -124,7 +124,7 @@ MonoBehaviour:
   targetDirection: {x: 0, y: 0}
   baseDirection: {x: 1, y: 0}
   animator: {fileID: 311255566247113865}
-  delay: 0.4
+  delay: 1
   circleOrigin: {fileID: 6524101713253843471}
   radius: 0.1
   attackBlocked: 0

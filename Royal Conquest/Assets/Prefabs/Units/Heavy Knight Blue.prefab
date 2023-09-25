@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4011366860812577882
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1919385911880842354, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.214339
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919385911880842354, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.451839
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919385911880842354, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919385911880842354, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919385911880842354, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919385911880842354, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919385911880842354, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919385911880842354, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919385911880842354, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919385911880842354, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525697594694786544, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b00ed4cacea895745bcf001af70b4069, type: 2}
+    - target: {fileID: 5361459263020304828, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1261912311, guid: 0581ec5632fc3874685ac3ee154191d1, type: 3}
+    - target: {fileID: 5774221404999245396, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_Name
+      value: Heavy Knight Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7638446348899014109, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: team
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7638446348899014109, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: isMovingNorth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7638446348899014109, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: healthBarPrefab
+      value: 
+      objectReference: {fileID: 7351108824063518325, guid: 28dc54ac3ae7ff54cadcd599638ab508, type: 3}
+    - target: {fileID: 7748260240365299722, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1670988924, guid: a5f49dbfbea8ad642be1e595e5083e19, type: 3}
+    - target: {fileID: 8790330092829819421, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e67f578e6cb42f248b9c70649e820db8, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7655f46bdb044274c8ba066b0bc3bc45, type: 3}

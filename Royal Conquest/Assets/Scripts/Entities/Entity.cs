@@ -12,8 +12,10 @@ public class Entity : MonoBehaviour
     [SerializeField] float moveSpeed = 1.0f;
     [SerializeField] string team = "";
     [SerializeField] float damageDealt = 15.0f;
+    [SerializeField] float entityKnockback = 1.0f;
     [SerializeField] Animator myAnimator;
     [SerializeField] SpriteRenderer mySprite;
+    [SerializeField] float turnRedDelay = .3f;
     public UnityEvent OnDeath;
     float timeSinceLastHeal = 0;
     Vector3 myDirection;
@@ -77,12 +79,24 @@ public class Entity : MonoBehaviour
         myDirection = v;
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float damage, float knockback, Vector3 enemyPosition)
     {
+        Vector2 knockbackDirection = (Vector2)(enemyPosition - gameObject.transform.position);
+        gameObject.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * knockback);
         timeSinceLastHeal = 0;
         entityHealth -= damage;
+        StartCoroutine(TurnSpriteRed());
         if(entityHealth <= 0)
             HandleEntityDeath();
+    }
+
+    public IEnumerator TurnSpriteRed()
+    {
+        //Debug.Log("red color");
+        mySprite.color = Color.red;
+        yield return new WaitForSeconds(turnRedDelay);
+        mySprite.color = Color.white;
+        //Debug.Log("white color");
     }
 
     public void Heal(float heal)
@@ -122,5 +136,10 @@ public class Entity : MonoBehaviour
     public void setEntityInControl(bool ieic)
     {
         isEntityInControl = ieic;
+    }
+
+    public float getKnockback()
+    {
+        return entityKnockback;
     }
 }

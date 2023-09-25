@@ -78,6 +78,16 @@ public class Unit : Entity
                 }
                 return;
             }
+            else // is there a closer enemy in range? (avoid chasing one enemy if you cant currently hit them)
+            {
+                foreach(GameObject gb in nearbyTargets)
+                {
+                    if(TwoObjectDistance(gameObject, gb) < TwoObjectDistance(gameObject, currentTarget))
+                    {
+                        newTarget = gb;
+                    }
+                }
+            }
         }
 
         //is there a nearby building or enemy in range

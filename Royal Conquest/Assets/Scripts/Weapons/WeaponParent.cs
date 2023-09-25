@@ -15,6 +15,7 @@ public class WeaponParent : MonoBehaviour
     public bool isAttacking = false;
     public GameObject targetObject;
     [SerializeField] GameObject me;
+    [SerializeField] bool isSplashDamager = false;
 
     public void ResetIsAttacking()
     {
@@ -110,11 +111,16 @@ public class WeaponParent : MonoBehaviour
             if(collider.isTrigger == false)
             {
                 //Debug.Log("Hit a dude " + collider.gameObject.name);
-                if(collider.gameObject.tag == "Unit" || collider.gameObject.tag == "Building" || collider.gameObject.tag == "Player")
+                
+                if(!isSplashDamager && collider.gameObject == targetObject)
                 {
-                    
-                    if(collider.gameObject.GetComponent<Entity>().getTeam() != me.GetComponent<Entity>().getTeam())
-                        collider.gameObject.GetComponent<Entity>().TakeDamage(me.GetComponent<Entity>().getDamageDealt());
+                    collider.gameObject.GetComponent<Entity>().TakeDamage(me.GetComponent<Entity>().getDamageDealt(), me.GetComponent<Entity>().getKnockback(), gameObject.transform.position);
+                }
+                else if(isSplashDamager)
+                {
+                    if(collider.gameObject.tag == "Unit" || collider.gameObject.tag == "Building" || collider.gameObject.tag == "Player")
+                        if(collider.gameObject.GetComponent<Entity>().getTeam() != me.GetComponent<Entity>().getTeam())
+                            collider.gameObject.GetComponent<Entity>().TakeDamage(me.GetComponent<Entity>().getDamageDealt(), me.GetComponent<Entity>().getKnockback(), gameObject.transform.position);
                 }
             }
         }

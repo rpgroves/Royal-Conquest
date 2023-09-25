@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 1521411049965679098}
   - component: {fileID: 7450896778932834071}
   m_Layer: 0
-  m_Name: Arrow Projectile
+  m_Name: Red Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,8 +130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 246f30596077d914789db34e7aeb0a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
-  damageToDeal: 20
   moveSpeed: 4
   mySprite: {fileID: 3227888901353918077}
 --- !u!61 &7450896778932834071
