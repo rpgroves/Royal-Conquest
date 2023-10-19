@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Entity : MonoBehaviour
 {
-    [SerializeField] float entityHealth = 10.0f;
+    public float entityHealth = 10.0f;
     [SerializeField] float entityMaxHealth = 100.0f;
     [SerializeField] float healingPerSecond = 5.0f;
     [SerializeField] float healingCooldown = 5.0f;
@@ -17,7 +17,7 @@ public class Entity : MonoBehaviour
     [SerializeField] SpriteRenderer mySprite;
     [SerializeField] float turnRedDelay = .3f;
     public UnityEvent OnDeath;
-    float timeSinceLastHeal = 0;
+    public float timeSinceLastHeal = 0;
     Vector3 myDirection;
     public CircleCollider2D myRangeCollider;
     public bool isEntityInControl = true;
@@ -79,7 +79,7 @@ public class Entity : MonoBehaviour
         myDirection = v;
     }
 
-    public void TakeDamage(float damage, float knockback, Vector3 enemyPosition)
+    public virtual void TakeDamage(float damage, float knockback, Vector3 enemyPosition)
     {
         Vector2 knockbackDirection = (Vector2)(enemyPosition - gameObject.transform.position);
         gameObject.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * knockback);

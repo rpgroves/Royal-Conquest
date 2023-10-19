@@ -14,4 +14,13 @@ public class Building : Entity
     {
         HandleHealing();
     }
+
+    public override void TakeDamage(float damage, float knockback, Vector3 enemyPosition)
+    {
+        timeSinceLastHeal = 0;
+        entityHealth -= damage;
+        StartCoroutine(TurnSpriteRed());
+        if(entityHealth <= 0)
+            HandleEntityDeath();
+    }
 }
